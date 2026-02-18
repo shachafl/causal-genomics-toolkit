@@ -342,10 +342,11 @@ class MultiOmicsIntegrator:
             })
         
         results_df = pd.DataFrame(results)
-        
+
         # FDR correction
+        from statsmodels.stats.multitest import multipletests
         _, results_df['fdr'], _, _ = multipletests(results_df['pval'], method='fdr_bh')
-        
+
         # Rank by p-value and effect size
         results_df['rank_score'] = -np.log10(results_df['pval'] + 1e-300) * np.abs(results_df['cohens_d'])
         
