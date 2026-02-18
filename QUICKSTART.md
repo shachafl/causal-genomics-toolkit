@@ -5,7 +5,7 @@ Get started with Causal Genomics Toolkit in 5 minutes!
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/causal-genomics-toolkit.git
+git clone https://github.com/shachafl/causal-genomics-toolkit.git
 cd causal-genomics-toolkit
 pip install -e .
 ```
@@ -151,6 +151,6 @@ Required columns:
 If you use this toolkit in your research, please cite:
 
 ```
-[Your Name] (2025). Causal Genomics Toolkit: A Python framework for 
-causal inference in genomics. GitHub: https://github.com/yourusername/causal-genomics-toolkit
+[Lior Shachaf] (2025). Causal Genomics Toolkit: A Python framework for 
+causal inference in genomics. GitHub: https://github.com/shachafl/causal-genomics-toolkit
 ```
